@@ -12,11 +12,13 @@ int main(void)
     unsigned int checkTimeBefore = millis();
     unsigned int checkTime;
 
-    while (1)
+    int cnt = 0;
+    while (cnt < 100)
     {
         checkTime = millis();
         if (checkTime - checkTimeBefore >= 5)	// 5 msec
         {
+            cnt++;
             printf("loop time: %d msec, After init: %d msec\n",
                 checkTime - checkTimeBefore,
                 checkTime - startTime);
