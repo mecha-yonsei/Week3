@@ -13,7 +13,7 @@
 #define MOTOR2 26
 #define PGAIN 10
 
-#define ARRAY_SIZE 3000
+#define NUM_ROWS 3000
 #define NUM_COLUMNS 2
 #define DAQ_TIME 10000  // 10s
 
@@ -29,7 +29,7 @@ unsigned int checkTimeBefore;
 unsigned int startTime;
 
 int dataIndex = 0;
-float dataArray[ARRAY_SIZE][NUM_COLUMNS];
+float dataArray[NUM_ROWS][NUM_COLUMNS];
 
 void updateDataArray()
 {
