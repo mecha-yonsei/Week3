@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <wiringPi.h>
 #include <softPwm.h>
+#include <string.h>
 
 #define LOOPTIME 5		
 #define ENCODERA 17		
