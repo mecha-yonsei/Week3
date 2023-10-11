@@ -1,4 +1,4 @@
-/* DATA_LOGGING EXAMPLE*/
+/* DATA LOGGING EXAMPLE*/
 
 #include <stdio.h>
 #include <wiringPi.h>
