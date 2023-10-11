@@ -1,4 +1,4 @@
-/* PLOT_GRAPH EXAMPLE*/
+/* PLOT GRAPH EXAMPLE*/
 
 #include <stdio.h>
 #include <wiringPi.h>
