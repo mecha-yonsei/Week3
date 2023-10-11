@@ -79,14 +79,11 @@ int main(void)
     char filename[100];
     FILE* file;
 
-    printf("Enter the CSV file name (including .csv extension): ");
+    printf("Enter the file name: ");
     scanf("%s", filename);
-
-    file = fopen(filename, "w");
-    if (file == NULL) {
-        printf("Failed to open the file.\n");
-        return 1;
-    }
+    
+    file = fopen(strcat(filename,".csv"), "w+");
+    
     wiringPiSetupGpio();
     pinMode(ENCODERA, INPUT);
     pinMode(ENCODERB, INPUT);
